@@ -6,7 +6,6 @@ export default function Home() {
 			<h1 className="mb-4 text-4xl font-bold text-white">
 				🚧 Under Construction 🚧
 			</h1>
-      <Plaza />
 			<p className="max-w-lg text-center text-gray-300 text-lg">
 				Thanks for visiting my portfolio site! I’m currently working on some
 				exciting updates.
