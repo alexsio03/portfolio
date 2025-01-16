@@ -1,18 +1,37 @@
-import Plaza from "../components/plaza";
+"use client"; // For the toggle functionality
+
+import { useState } from "react";
+import Dots from "../components/dots";
 
 export default function Home() {
-	return (
-		<main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 p-4">
-			<h1 className="mb-4 text-4xl font-bold text-white">
-				🚧 Under Construction 🚧
-			</h1>
-			<p className="max-w-lg text-center text-gray-300 text-lg">
-				Thanks for visiting my portfolio site! I’m currently working on some
-				exciting updates.
-			</p>
-			<p className="mt-2 text-center text-gray-300 text-lg">
-				Please check back soon!
-			</p>
-		</main>
-	);
+  const [isDark, setIsDark] = useState(true);
+
+  return (
+    <div className={isDark ? "dark" : ""}>
+      <div className="relative min-h-screen bg-white text-gray-800 dark:bg-[#121212] dark:text-gray-200 transition-colors">
+
+        <Dots />
+
+        {/* Navbar with light/dark toggle */}
+        <nav className="flex justify-end p-4">
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-800
+                       dark:bg-gray-700 dark:text-gray-100 transition-colors"
+          >
+            {isDark ? "Light Mode" : "Dark Mode"}
+          </button>
+        </nav>
+
+        {/* Main content */}
+        <main className="flex flex-col items-center justify-center pt-24 pb-24">
+          <h1 className="mb-4 text-4xl font-bold">Dark/Light Mode Background</h1>
+          <p className="max-w-lg text-center">
+            This is a demonstration of dotted clusters in the top-right and bottom-left corners with a theme toggle.
+          </p>
+        </main>
+      </div>
+    </div>
+  );
 }
+
