@@ -26,7 +26,7 @@ export default function Navbar({
 	];
 
 	return (
-		<div className="flex flex-col mx-auto justify-around bg-zinc-800 p-4 rounded-2xl border border-zinc-700">
+		<div className="flex flex-col mx-auto justify-around bg-zinc-800 p-4 rounded-lg border border-zinc-700">
 			{navItems.map((item, index) => (
 				<NavPill
 					key={item.label}

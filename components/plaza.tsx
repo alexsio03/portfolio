@@ -7,7 +7,7 @@ import { useState } from "react";
 const plazas: { [key: string]: () => JSX.Element } = {
 	Home: () => <HomePlaza />,
 	Education: () => <EduPlaza />,
-  Resume: () => <ResumePlaza />,
+	Resume: () => <ResumePlaza />,
 };
 
 export default function Plaza({ activePlaza }: { activePlaza: string }) {
@@ -49,12 +49,14 @@ function HomePlaza() {
 				</div>
 			</Pod>
 
-			<Pod classExtra="col-span-3 row-span-4 flex justify-center">
-				<div className="flex flex-col justify-center my-3"></div>
+			<Pod classExtra="col-span-3 row-span-4">
+				<div className="flex flex-col my-2"></div>
 			</Pod>
 
-			<Pod classExtra="col-span-3 row-span-4 flex justify-center">
-				<div className="flex flex-col justify-center my-3"></div>
+			<Pod classExtra="col-span-3 row-span-4 ">
+				<div className="flex flex-col  my-2">
+					<h1 className="text-xl font-medium mb-2">Hobbies</h1>
+				</div>
 			</Pod>
 
 			<Pod classExtra="col-span-4 row-span-1 flex justify-around items-center">
@@ -62,8 +64,10 @@ function HomePlaza() {
 				<h2 className="text-lg font-medium">San Francisco, CA</h2>
 			</Pod>
 
-			<Pod classExtra="col-span-6 row-span-2 flex justify-around items-center">
-				<div></div>
+			<Pod classExtra="col-span-6 row-span-2 flex ">
+				<div className="flex flex-col">
+					<h1 className="text-xl font-medium mb-2">Why Me?</h1>
+				</div>
 			</Pod>
 			<Pod classExtra="col-span-4 row-span-1 flex justify-around items-center">
 				{copyMessage ? (
@@ -96,18 +100,58 @@ function HomePlaza() {
 }
 
 function ResumePlaza() {
-  return (
-<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
-  <Pod classExtra="col-span-10 row-span-10">
-      <embed className="w-full h-full" src="/resume.pdf" type="application/pdf" />
-  </Pod>
-  </div>
-  )
+	return (
+		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
+			<Pod classExtra="col-span-10 row-span-10">
+				<embed
+					className="w-full h-full"
+					src="/resume.pdf"
+					type="application/pdf"
+				/>
+			</Pod>
+		</div>
+	);
 }
 
-const EduPlaza = () => (
-	<div>
-		<h1>Welcome to the Education Plaza</h1>
-		<p>This is the content of the Education Plaza.</p>
-	</div>
-);
+function EduPlaza() {
+	return (
+		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
+			<Pod classExtra="col-span-10 row-span-7 flex flex-col">
+				<h1>Cal Poly San Luis Obispo</h1>
+				<h1>Bachelor's Degree in Computer Science, 3.6 GPA, Cum Laude</h1>
+				<h1>September 2021 - December 2024</h1>
+        <hr className="my-4" />
+				<div className="flex justify-between">
+					<div>
+						<h1 className="mb-2">Relevant Coursework</h1>
+						<ul>
+							<li>Computer Science 1</li>
+							<li>Computer Science 2</li>
+							<li>Computer Science 3</li>
+							<li>Computer Science 4</li>
+							<li>Computer Science 5</li>
+							<li>Computer Science 6</li>
+						</ul>
+					</div>
+          <div>
+            <h1 className="mb-2">Extracurriculars</h1>
+            <ul>
+              <li>Cal Poly Student Government</li>
+              <li>Cal Poly Student Government</li>
+              <li>Cal Poly Student Government</li>
+              <li>Cal Poly Student Government</li>
+              <li>Cal Poly Student Government</li>
+              <li>Cal Poly Student Government</li>
+            </ul>
+          </div>
+				</div>
+			</Pod>
+			<Pod classExtra="col-span-10 row-span-3 flex flex-col">
+        <h1>Semester Abroad: UC3M - Madrid</h1>
+        <h1>Spring Semester 2024</h1>
+        <hr className="my-4" />
+        <h1>Courses Taken: Database Systems, Mobile App Development, Artificial Intelligence, Software Verification and Testing</h1>
+      </Pod>
+		</div>
+	);
+}
