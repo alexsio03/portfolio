@@ -22,7 +22,7 @@ export default function Home() {
     <div className={isDark ? "dark" : ""}>
       <div className="flex items-center justify-center relative min-h-screen bg-white text-gray-800 dark:bg-[#18181b] dark:text-gray-200 transition-colors">
         <Dots />
-        <main className="z-10 border w-[60rem] h-[40rem] p-4 flex">
+        <main className="z-10 w-[60rem] h-[40rem] p-4 flex">
           <div
             className={`flex-1 transition-opacity duration-500 ${
               isTransitioning ? "opacity-0" : "opacity-100"
