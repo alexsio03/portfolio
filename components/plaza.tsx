@@ -37,7 +37,7 @@ function HomePlaza() {
 
 	return (
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
-			<Pod classExtra="col-span-4 row-span-8 flex p-0 bg-zinc-900 items-center">
+			<Pod classExtra="col-span-4 row-span-8 flex !p-0 bg-zinc-900 ">
 				<Image className="rounded-lg" src={alexPic} alt="Alex Pic" />
 			</Pod>
 

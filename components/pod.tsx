@@ -7,7 +7,7 @@ export default function Pod({
 }) {
 	return (
 		<div
-			className={`p-4 rounded-lg bg-zinc-800 border border-zinc-700 ${classExtra}`}
+			className={`rounded-lg bg-zinc-800 border border-zinc-700 p-4 ${classExtra}`}
 		>
 			{children}
 		</div>
