@@ -10,9 +10,14 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@tsparticles/engine": "^3.7.1",
+    "@tsparticles/react": "^3.0.0",
+    "neko-ts": "^0.0.6",
     "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.7.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
