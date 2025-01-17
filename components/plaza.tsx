@@ -8,6 +8,9 @@ const plazas: { [key: string]: () => JSX.Element } = {
 	Home: () => <HomePlaza />,
 	Education: () => <EduPlaza />,
 	Resume: () => <ResumePlaza />,
+	Projects: () => <ProjectPlaza />,
+	Experience: () => <ExperiencePlaza />,
+	Skills: () => <SkillsPlaza />,
 };
 
 export default function Plaza({ activePlaza }: { activePlaza: string }) {
@@ -120,7 +123,7 @@ function EduPlaza() {
 				<h1>Cal Poly San Luis Obispo</h1>
 				<h1>Bachelor's Degree in Computer Science, 3.6 GPA, Cum Laude</h1>
 				<h1>September 2021 - December 2024</h1>
-        <hr className="my-4" />
+				<hr className="my-4" />
 				<div className="flex justify-between">
 					<div>
 						<h1 className="mb-2">Relevant Coursework</h1>
@@ -133,25 +136,79 @@ function EduPlaza() {
 							<li>Computer Science 6</li>
 						</ul>
 					</div>
-          <div>
-            <h1 className="mb-2">Extracurriculars</h1>
-            <ul>
-              <li>Cal Poly Student Government</li>
-              <li>Cal Poly Student Government</li>
-              <li>Cal Poly Student Government</li>
-              <li>Cal Poly Student Government</li>
-              <li>Cal Poly Student Government</li>
-              <li>Cal Poly Student Government</li>
-            </ul>
-          </div>
+					<div>
+						<h1 className="mb-2">Extracurriculars</h1>
+						<ul>
+							<li>Cal Poly Student Government</li>
+							<li>Cal Poly Student Government</li>
+							<li>Cal Poly Student Government</li>
+							<li>Cal Poly Student Government</li>
+							<li>Cal Poly Student Government</li>
+							<li>Cal Poly Student Government</li>
+						</ul>
+					</div>
 				</div>
 			</Pod>
 			<Pod classExtra="col-span-10 row-span-3 flex flex-col">
-        <h1>Semester Abroad: UC3M - Madrid</h1>
-        <h1>Spring Semester 2024</h1>
-        <hr className="my-4" />
-        <h1>Courses Taken: Database Systems, Mobile App Development, Artificial Intelligence, Software Verification and Testing</h1>
-      </Pod>
+				<h1>Semester Abroad: UC3M - Madrid</h1>
+				<h1>Spring Semester 2024</h1>
+				<hr className="my-4" />
+				<h1>
+					Courses Taken: Database Systems, Mobile App Development, Artificial
+					Intelligence, Software Verification and Testing
+				</h1>
+			</Pod>
 		</div>
 	);
+}
+
+function ProjectPlaza() {
+	return (
+		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
+			<Pod classExtra="col-span-5 row-span-4">
+				<h1>HomeLab</h1>
+			</Pod>
+			<Pod classExtra="col-span-5 row-span-4">
+				<h1>Senior Project</h1>
+			</Pod>
+			<Pod classExtra="col-span-5 row-span-4">
+				<h1>Dead Internet Theory</h1>
+			</Pod>
+			<Pod classExtra="col-span-5 row-span-4">
+				<h1>Portfolio Site</h1>
+			</Pod>
+			<Pod classExtra="col-span-10 row-span-2">
+				<h1>Past Projects</h1>
+			</Pod>
+		</div>
+	);
+}
+
+function ExperiencePlaza() {
+  return (
+    <div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
+      <Pod classExtra="col-span-10 row-span-6">
+        <h1>Accolade</h1>
+      </Pod>
+      <Pod classExtra="col-span-10 row-span-4">
+        <h1>CreatorPad</h1>
+      </Pod>
+    </div>
+  );
+}
+
+function SkillsPlaza () {
+  return (
+    <div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
+      <Pod classExtra="col-span-7 row-span-7">
+        <h1>Tech Stack</h1>
+      </Pod>
+      <Pod classExtra="col-span-3 row-span-7">
+        <h1>Coding Languages</h1>
+      </Pod>
+      <Pod classExtra="col-span-10 row-span-3">
+        <h1>Languages</h1>
+      </Pod>
+    </div>
+  );
 }
