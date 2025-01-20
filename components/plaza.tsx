@@ -53,7 +53,9 @@ function HomePlaza() {
 			</Pod>
 
 			<Pod classExtra="col-span-3 row-span-4">
-				<div className="flex flex-col my-2"></div>
+				<div className="flex flex-col my-2">
+          <h1 className="text-xl font-medium mb-2">Links</h1>
+        </div>
 			</Pod>
 
 			<Pod classExtra="col-span-3 row-span-4 ">
