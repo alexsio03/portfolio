@@ -345,20 +345,66 @@ function SkillsPlaza() {
 					<Icons.KubeIcon />
 					<Icons.GitIcon />
 					<Icons.LinuxIcon />
-					<Icons.SQLIcon />
+					<Icons.DBIcon />
 					<Icons.AzureIcon />
 					<Icons.AWSIcon />
 					<Icons.GCPIcon />
-        </div>
+				</div>
 			</Pod>
 			<Pod classExtra="col-span-3 row-span-7">
-				<h1>Coding Languages</h1>
-				<h2>Python, C, C++, SQL, Go, Java, TypeScript, JavaScript</h2>
+				<h1 className="text-lg">Coding Languages</h1>
+				<hr className="my-4" />
+				<div className="grid grid-cols-2 gap-10 ml-1">
+					<Icons.PythonIcon />
+					<Icons.GoIcon />
+					<Icons.TSIcon />
+					<Icons.JSIcon />
+					<Icons.CIcon />
+					<Icons.CPPIcon />
+					<Icons.SQLIcon />
+					<Icons.JavaIcon />
+				</div>
 			</Pod>
 			<Pod classExtra="col-span-10 row-span-3">
-				<h1>Languages</h1>
-				<h2>English, Polish, German, Spanish</h2>
+				<h1 className="text-xl">Languages</h1>
+				<hr className="my-4" />
+				<div className="flex flex-row">
+					<LanguageTimeline />
+				</div>
 			</Pod>
 		</div>
 	);
 }
+
+const LanguageTimeline = () => {
+	return (
+		<div className="flex flex-col mt-4 items-center font-sans w-full">
+			<div className="relative w-full flex items-center">
+				<div className="absolute top-6 w-full h-0.5 bg-zinc-600"></div>
+
+				<div className="flex flex-col items-center">
+					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
+					<span className="relative -top-4 text-sm text-gray-100">English</span>
+				</div>
+				<div className="relative flex flex-col ml-12 items-center">
+					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
+					<span className="relative -top-4 text-sm text-gray-100">Polish</span>
+				</div>
+				<div className="relative flex flex-col ml-48 items-center">
+					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
+					<span className="relative -top-4 text-sm text-gray-100">German</span>
+				</div>
+				<div className="relative flex flex-col ml-36 items-center">
+					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
+					<span className="relative -top-4 text-sm text-gray-100">Spanish</span>
+				</div>
+			</div>
+
+			<div className="flex justify-between w-full mt-6 italic text-sm">
+				<span>Fluent</span>
+				<span>Conversational</span>
+				<span>Beginner</span>
+			</div>
+		</div>
+	);
+};

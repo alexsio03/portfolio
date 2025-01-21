@@ -19,10 +19,10 @@ export default function Navbar({
 		{ icon: <Icons.EduIcon />, label: "Education" },
 		{ icon: <Icons.SkillsIcon />, label: "Skills" },
 		{ icon: <Icons.ResumeIcon />, label: "Resume" },
-		{
+		/* {
 			icon: isDark ? <Icons.MoonIcon /> : <Icons.SunIcon />,
 			label: isDark ? "Dark Mode" : "Light Mode",
-		},
+		}, */
 	];
 
 	return (
