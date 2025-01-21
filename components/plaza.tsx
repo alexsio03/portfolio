@@ -55,12 +55,20 @@ function HomePlaza() {
 			<Pod classExtra="col-span-3 row-span-4">
 				<div className="flex flex-col my-2">
           <h1 className="text-xl font-medium mb-2">Links</h1>
+          <hr className="my-2"/>
+          <a href="https://blog.alexwarda.com" className="hover:underline text-lg font-medium text-zinc-400 my-2">Blog</a>
+          <a href="https://photos.alexwarda.com" className="hover:underline text-lg font-medium text-zinc-400 my-2">Photos</a>
+          <a href="https://dash.local.alexwarda.com" className="hover:underline text-lg font-medium text-zinc-400 my-2">Local Dash</a>
         </div>
 			</Pod>
 
 			<Pod classExtra="col-span-3 row-span-4 ">
 				<div className="flex flex-col  my-2">
 					<h1 className="text-xl font-medium mb-2">Hobbies</h1>
+          <hr className="my-2"/>
+          <div className="grid grid-cols-2 grid-rows-2">
+            <p>fishing, guitar, reading, hiking</p>
+           </div>
 				</div>
 			</Pod>
 
