@@ -56,6 +56,7 @@ function HomePlaza() {
 					<hr className="my-2" />
 					<a
 						href="https://blog.alexwarda.com"
+            target="_blank"
 						className="flex flex-row hover:underline text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
@@ -65,6 +66,7 @@ function HomePlaza() {
 					</a>
 					<a
 						href="https://photos.alexwarda.com"
+            target="_blank"
 						className="hover:underline flex flex-row text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
@@ -74,6 +76,7 @@ function HomePlaza() {
 					</a>
 					<a
 						href="https://dash.local.alexwarda.com"
+            target="_blank"
 						className="hover:underline flex flex-row text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
