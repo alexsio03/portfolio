@@ -56,19 +56,29 @@ function HomePlaza() {
 				<div className="flex flex-col my-2">
           <h1 className="text-xl font-medium mb-2">Links</h1>
           <hr className="my-2"/>
-          <a href="https://blog.alexwarda.com" className="hover:underline text-lg font-medium text-zinc-400 my-2">Blog</a>
-          <a href="https://photos.alexwarda.com" className="hover:underline text-lg font-medium text-zinc-400 my-2">Photos</a>
-          <a href="https://dash.local.alexwarda.com" className="hover:underline text-lg font-medium text-zinc-400 my-2">Local Dash</a>
+          <a href="https://blog.alexwarda.com" className="flex flex-row hover:underline text-lg font-medium text-zinc-400 my-2">
+            <span className="mr-2"><Icons.UnlockIcon /></span>Blog</a>
+          <a href="https://photos.alexwarda.com" className="hover:underline flex flex-row text-lg font-medium text-zinc-400 my-2">
+            <span className="mr-2"><Icons.LockIcon /></span>Photos</a>
+          <a href="https://dash.local.alexwarda.com" className="hover:underline flex flex-row text-lg font-medium text-zinc-400 my-2">
+            <span className="mr-2"><Icons.LockIcon /></span>Media Server</a>
         </div>
 			</Pod>
 
 			<Pod classExtra="col-span-3 row-span-4 ">
-				<div className="flex flex-col  my-2">
+				<div className="flex flex-col my-2 h-full">
 					<h1 className="text-xl font-medium mb-2">Hobbies</h1>
           <hr className="my-2"/>
-          <div className="grid grid-cols-2 grid-rows-2">
-            <p>fishing, guitar, reading, hiking</p>
-           </div>
+          <div className="flex flex-row justify-around h-full">
+            <span className="flex flex-col justify-around">
+            <Icons.FishIcon />
+            <Icons.BookIcon />
+            </span>
+            <span className="flex flex-col justify-around">
+            <Icons.GuitarIcon />
+            <Icons.HikeIcon />
+            </span>
+          </div>
 				</div>
 			</Pod>
 
@@ -80,6 +90,8 @@ function HomePlaza() {
 			<Pod classExtra="col-span-6 row-span-2 flex ">
 				<div className="flex flex-col">
 					<h1 className="text-xl font-medium mb-2">Why Me?</h1>
+          <hr className="mb-2"/>
+          <h1 className="text-md text-zinc-400 font-medium">Passionate, Determined, Professional, Curious</h1>
 				</div>
 			</Pod>
 			<Pod classExtra="col-span-4 row-span-1 flex justify-around items-center">
