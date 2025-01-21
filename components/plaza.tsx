@@ -43,10 +43,8 @@ function HomePlaza() {
 
 			<Pod classExtra="col-span-6 row-span-4 flex justify-center">
 				<div className="flex flex-col justify-center">
-					<h1 className="text-4xl font-medium mt-5 leading-tight">
-						Hi, I'm Alex.
-					</h1>
-					<p className="text-4xl font-medium leading-tight text-zinc-400 mb-10">
+					<h1 className="text-4xl  mt-5 leading-tight">Hi, I'm Alex.</h1>
+					<p className="text-4xl  leading-tight text-zinc-400 mb-10">
 						I'm a Full-Stack Software Engineer.
 					</p>
 				</div>
@@ -54,11 +52,11 @@ function HomePlaza() {
 
 			<Pod classExtra="col-span-3 row-span-4">
 				<div className="flex flex-col my-2">
-					<h1 className="text-xl font-medium mb-2">Links</h1>
+					<h1 className="text-xl  mb-2">Links</h1>
 					<hr className="my-2" />
 					<a
 						href="https://blog.alexwarda.com"
-						className="flex flex-row hover:underline text-lg font-medium text-zinc-400 my-2"
+						className="flex flex-row hover:underline text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
 							<Icons.UnlockIcon />
@@ -67,7 +65,7 @@ function HomePlaza() {
 					</a>
 					<a
 						href="https://photos.alexwarda.com"
-						className="hover:underline flex flex-row text-lg font-medium text-zinc-400 my-2"
+						className="hover:underline flex flex-row text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
 							<Icons.LockIcon />
@@ -76,7 +74,7 @@ function HomePlaza() {
 					</a>
 					<a
 						href="https://dash.local.alexwarda.com"
-						className="hover:underline flex flex-row text-lg font-medium text-zinc-400 my-2"
+						className="hover:underline flex flex-row text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
 							<Icons.LockIcon />
@@ -88,7 +86,7 @@ function HomePlaza() {
 
 			<Pod classExtra="col-span-3 row-span-4 ">
 				<div className="flex flex-col my-2 h-full">
-					<h1 className="text-xl font-medium mb-2">Hobbies</h1>
+					<h1 className="text-xl  mb-2">Hobbies</h1>
 					<hr className="my-2" />
 					<div className="flex flex-row justify-around h-full">
 						<span className="flex flex-col justify-around">
@@ -105,14 +103,14 @@ function HomePlaza() {
 
 			<Pod classExtra="col-span-4 row-span-1 flex justify-around items-center">
 				<Icons.LocationIcon />
-				<h2 className="text-lg font-medium">San Francisco, CA</h2>
+				<h2 className="text-lg ">San Francisco, CA</h2>
 			</Pod>
 
 			<Pod classExtra="col-span-6 row-span-2 flex ">
 				<div className="flex flex-col">
-					<h1 className="text-xl font-medium mb-2">Why Me?</h1>
+					<h1 className="text-xl  mb-2">Why Me?</h1>
 					<hr className="mb-2" />
-					<h1 className="text-md text-zinc-400 font-medium">
+					<h1 className="text-md text-zinc-400 ">
 						Passionate, Determined, Professional, Curious
 					</h1>
 				</div>
@@ -165,43 +163,51 @@ function EduPlaza() {
 	return (
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
 			<Pod classExtra="col-span-10 row-span-7 flex flex-col">
-				<h1>Cal Poly San Luis Obispo</h1>
-				<h1>Bachelor's Degree in Computer Science, 3.6 GPA, Cum Laude</h1>
-				<h1>September 2021 - December 2024</h1>
+				<h1 className="text-xl">Cal Poly San Luis Obispo</h1>
+				<h1 className="italic text-zinc-400">
+					Bachelor's Degree in Computer Science, 3.6 GPA, Cum Laude
+				</h1>
+				<h1 className="text-zinc-400 italic text-xs">
+					September 2021 - December 2024
+				</h1>
 				<hr className="my-4" />
-				<div className="flex justify-between">
+				<div className="flex justify-around">
 					<div>
-						<h1 className="mb-2">Relevant Coursework</h1>
-						<ul>
-							<li>Computer Science 1</li>
-							<li>Computer Science 2</li>
-							<li>Computer Science 3</li>
-							<li>Computer Science 4</li>
-							<li>Computer Science 5</li>
-							<li>Computer Science 6</li>
+						<h1 className="mb-2 text-lg">Relevant Coursework</h1>
+						<ul className="list-disc ml-4 flex text-sm italic flex-col gap-1 text-zinc-400">
+							<li>Database Systems</li>
+							<li>Data Science</li>
+							<li>Algorithms</li>
+							<li>Programming Languages</li>
+							<li>Computer Security</li>
+							<li>Systems Programming</li>
+							<li>Operating Systems</li>
+							<li>Software Engineering</li>
+							<li>Web Development</li>
 						</ul>
 					</div>
 					<div>
-						<h1 className="mb-2">Extracurriculars</h1>
-						<ul>
-							<li>Cal Poly Student Government</li>
-							<li>Cal Poly Student Government</li>
-							<li>Cal Poly Student Government</li>
-							<li>Cal Poly Student Government</li>
-							<li>Cal Poly Student Government</li>
-							<li>Cal Poly Student Government</li>
+						<h1 className="mb-2 text-lg">Extracurriculars</h1>
+						<ul className="list-disc ml-4 flex text-sm italic flex-col gap-1 text-zinc-400">
+							<li>SLO Hackathon</li>
+							<li>Cal Poly Surfrider Foundation</li>
+							<li>CP Ski Club</li>
+							<li>Cal Poly Hiking Club</li>
+							<li>The Pad Climbing SLO</li>
+							<li>IM Soccer</li>
+							<li>IM Softball</li>
 						</ul>
 					</div>
 				</div>
 			</Pod>
 			<Pod classExtra="col-span-10 row-span-3 flex flex-col">
-				<h1>Semester Abroad: UC3M - Madrid</h1>
-				<h1>Spring Semester 2024</h1>
+				<h1 className="text-xl">Semester Abroad: UC3M - Madrid</h1>
+				<h1 className="italic text-zinc-400 text-xs">Spring Semester 2024</h1>
 				<hr className="my-4" />
-				<h1>
-					Courses Taken: Database Systems, Mobile App Development, Artificial
-					Intelligence, Software Verification and Testing
-				</h1>
+        <div className="flex flex-row">
+          <h1 className="text-lg">Coursework:</h1>
+          <h2 className="ml-8 mt-1 text-zinc-400 italic text-sm">Database Systems, Mobile App Development, Artificial Intelligence, <br/>Software Verification and Testing</h2>
+        </div>
 			</Pod>
 		</div>
 	);
