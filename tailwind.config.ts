@@ -13,6 +13,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'spin-slow': 'spin 60s linear infinite',
+      }
     },
   },
   plugins: [],

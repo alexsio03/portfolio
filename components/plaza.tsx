@@ -290,7 +290,9 @@ function ExperiencePlaza() {
 					</li>
 					<li>
 						Technologies Used:{" "}
-						<span className="text-zinc-400 italic text-sm">Next.js, React, Jest, TypeScript, Django, Python, AWS</span>
+						<span className="text-zinc-400 italic text-sm">
+							Next.js, React, Jest, TypeScript, Django, Python, AWS
+						</span>
 					</li>
 				</ul>
 			</Pod>
@@ -318,7 +320,9 @@ function ExperiencePlaza() {
 					</li>
 					<li>
 						Technologies Used:{" "}
-						<span className="text-zinc-400 italic text-sm">Svelte, Drizzle, TypeScript, Linear, Figma</span>
+						<span className="text-zinc-400 italic text-sm">
+							Svelte, Drizzle, TypeScript, Linear, Figma
+						</span>
 					</li>
 				</ul>
 			</Pod>
@@ -330,16 +334,30 @@ function SkillsPlaza() {
 	return (
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
 			<Pod classExtra="col-span-7 row-span-7">
-				<h1>Tech Stack</h1>
-        <h2>Git, Linux, Next.js, Node.js, Docker, Kubernetes, Svelte, React, Microsoft Azure, AWS</h2>
+				<h1 className="text-xl">Tech Stack</h1>
+				<hr className="my-4" />
+				<div className="grid grid-cols-3 gap-4 ml-12">
+					<Icons.NextJSIcon />
+					<Icons.ReactIcon />
+					<Icons.SvelteIcon />
+					<Icons.NodeJSIcon />
+					<Icons.DockerIcon />
+					<Icons.KubeIcon />
+					<Icons.GitIcon />
+					<Icons.LinuxIcon />
+					<Icons.SQLIcon />
+					<Icons.AzureIcon />
+					<Icons.AWSIcon />
+					<Icons.GCPIcon />
+        </div>
 			</Pod>
 			<Pod classExtra="col-span-3 row-span-7">
 				<h1>Coding Languages</h1>
-        <h2>Python, C, C++, SQL, Go, Java, TypeScript, JavaScript</h2>
+				<h2>Python, C, C++, SQL, Go, Java, TypeScript, JavaScript</h2>
 			</Pod>
 			<Pod classExtra="col-span-10 row-span-3">
 				<h1>Languages</h1>
-        <h2>English, Polish, German, Spanish</h2>
+				<h2>English, Polish, German, Spanish</h2>
 			</Pod>
 		</div>
 	);
