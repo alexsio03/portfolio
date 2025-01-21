@@ -331,12 +331,15 @@ function SkillsPlaza() {
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
 			<Pod classExtra="col-span-7 row-span-7">
 				<h1>Tech Stack</h1>
+        <h2>Git, Linux, Next.js, Node.js, Docker, Kubernetes, Svelte, React, Microsoft Azure, AWS</h2>
 			</Pod>
 			<Pod classExtra="col-span-3 row-span-7">
 				<h1>Coding Languages</h1>
+        <h2>Python, C, C++, SQL, Go, Java, TypeScript, JavaScript</h2>
 			</Pod>
 			<Pod classExtra="col-span-10 row-span-3">
 				<h1>Languages</h1>
+        <h2>English, Polish, German, Spanish</h2>
 			</Pod>
 		</div>
 	);

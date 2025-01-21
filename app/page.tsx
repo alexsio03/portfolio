@@ -39,7 +39,7 @@ export default function Home() {
 				<Dots />
 				<main
 					id="main"
-					className="z-10 w-full h-full flex items-center justify-center"
+					className="z-10 w-full h-screen flex items-center justify-center"
 				>
 					<div className="w-[60rem] h-[40rem] p-4 flex">
 						<div
