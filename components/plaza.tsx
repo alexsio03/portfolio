@@ -4,7 +4,7 @@ import alexPic from "../public/coco2.png";
 import * as Icons from "../icons/plaza";
 import { useState } from "react";
 
-const plazas: { [key: string]: () => JSX.Element } = {
+const plazas: { [key: string]: () => React.ReactNode } = {
 	Home: () => <HomePlaza />,
 	Education: () => <EduPlaza />,
 	Resume: () => <ResumePlaza />,
@@ -43,9 +43,9 @@ function HomePlaza() {
 
 			<Pod classExtra="col-span-6 row-span-4 flex justify-center">
 				<div className="flex flex-col justify-center">
-					<h1 className="text-4xl  mt-5 leading-tight">Hi, I'm Alex.</h1>
+					<h1 className="text-4xl  mt-5 leading-tight">Hi, I&apos;m Alex.</h1>
 					<p className="text-4xl  leading-tight text-zinc-400 mb-10">
-						I'm a Full-Stack Software Engineer.
+						I&apos;m a Full-Stack Software Engineer.
 					</p>
 				</div>
 			</Pod>
@@ -168,7 +168,7 @@ function EduPlaza() {
 			<Pod classExtra="col-span-10 row-span-7 flex flex-col">
 				<h1 className="text-xl">Cal Poly San Luis Obispo</h1>
 				<h1 className="italic text-zinc-400">
-					Bachelor's Degree in Computer Science, 3.6 GPA, Cum Laude
+					Bachelor&apos;s Degree in Computer Science, 3.6 GPA, Cum Laude
 				</h1>
 				<h1 className="text-zinc-400 italic text-xs">
 					September 2021 - December 2024
