@@ -204,10 +204,14 @@ function EduPlaza() {
 				<h1 className="text-xl">Semester Abroad: UC3M - Madrid</h1>
 				<h1 className="italic text-zinc-400 text-xs">Spring Semester 2024</h1>
 				<hr className="my-4" />
-        <div className="flex flex-row">
-          <h1 className="text-lg">Coursework:</h1>
-          <h2 className="ml-8 mt-1 text-zinc-400 italic text-sm">Database Systems, Mobile App Development, Artificial Intelligence, <br/>Software Verification and Testing</h2>
-        </div>
+				<div className="flex flex-row">
+					<h1 className="text-lg">Coursework:</h1>
+					<h2 className="ml-8 mt-1 text-zinc-400 italic text-sm">
+						Database Systems, Mobile App Development, Artificial Intelligence,{" "}
+						<br />
+						Software Verification and Testing
+					</h2>
+				</div>
 			</Pod>
 		</div>
 	);
@@ -218,23 +222,33 @@ function ProjectPlaza() {
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
 			<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
 				<h1 className="text-2xl">Home Lab</h1>
-        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
+				<h1 className="text-2xl">
+					<Icons.ArrowRightIcon />
+				</h1>
 			</Pod>
-<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+			<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
 				<h1 className="text-2xl">Senior Project</h1>
-        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
+				<h1 className="text-2xl">
+					<Icons.ArrowRightIcon />
+				</h1>
 			</Pod>
-<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+			<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
 				<h1 className="text-2xl">Portfolio Site</h1>
-        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
+				<h1 className="text-2xl">
+					<Icons.ArrowRightIcon />
+				</h1>
 			</Pod>
-<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+			<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
 				<h1 className="text-2xl">Dead Internet Theory</h1>
-        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
+				<h1 className="text-2xl">
+					<Icons.ArrowRightIcon />
+				</h1>
 			</Pod>
 			<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-10 row-span-2">
 				<h1 className="text-2xl">Past Projects</h1>
-        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
+				<h1 className="text-2xl">
+					<Icons.ArrowRightIcon />
+				</h1>
 			</Pod>
 		</div>
 	);
@@ -244,10 +258,69 @@ function ExperiencePlaza() {
 	return (
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
 			<Pod classExtra="col-span-10 row-span-6">
-				<h1>Accolade</h1>
+				<h1 className="text-xl">Full Stack Software Engineer Intern</h1>
+				<h2>Accolade</h2>
+				<h3 className="text-zinc-400 italic text-sm">
+					San Francisco, CA: June 2024 - August 2024
+				</h3>
+				<hr className="my-2" />
+				<ul className="list-disc ml-4 mt-5 flex flex-col my-4 gap-3">
+					<li>
+						Full Stack Development:{" "}
+						<span className="text-zinc-400 italic text-sm">
+							Developed multiple improvements to the PlushCare product,
+							including new API routes, database migrations, and updating pages
+							throughout the site.
+						</span>
+					</li>
+					<li>
+						Project Management:{" "}
+						<span className="text-zinc-400 italic text-sm">
+							Led a team of 4 interns in a capstone project designing an
+							internal dashboard using Salesforce and RedShift.
+						</span>
+					</li>
+					<li>
+						Feature Testing:{" "}
+						<span className="text-zinc-400 italic text-sm">
+							Independently conducted weekly A/B tests with the product
+							management team, and implemented new connections using APIs to
+							gather vital metrics.
+						</span>
+					</li>
+					<li>
+						Technologies Used:{" "}
+						<span className="text-zinc-400 italic text-sm">Next.js, React, Jest, TypeScript, Django, Python, AWS</span>
+					</li>
+				</ul>
 			</Pod>
-			<Pod classExtra="col-span-10 row-span-4">
-				<h1>CreatorPad</h1>
+			<Pod classExtra="col-span-10 row-span-5">
+				<h1 className="text-xl">Founding Engineer</h1>
+				<h2>CreatorPad</h2>
+				<h3 className="text-zinc-400 italic text-sm">
+					Remote: October 2023 - February 2024
+				</h3>
+				<hr className="my-2" />
+				<ul className="list-disc ml-4 flex flex-col gap-1">
+					<li>
+						Web Development:{" "}
+						<span className="text-zinc-400 italic text-sm">
+							Worked with the CTO to redesign the main page and profile page,
+							implementing cross-site connections and new database schemas.
+						</span>
+					</li>
+					<li>
+						Algorithmic Design:{" "}
+						<span className="text-zinc-400 italic text-sm">
+							Reduced the complexity and render time of the profile tile sizing
+							algorithm by over 50% for better user experience.
+						</span>
+					</li>
+					<li>
+						Technologies Used:{" "}
+						<span className="text-zinc-400 italic text-sm">Svelte, Drizzle, TypeScript, Linear, Figma</span>
+					</li>
+				</ul>
 			</Pod>
 		</div>
 	);
