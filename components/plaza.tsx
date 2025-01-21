@@ -216,20 +216,25 @@ function EduPlaza() {
 function ProjectPlaza() {
 	return (
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
-			<Pod classExtra="col-span-5 row-span-4">
-				<h1>HomeLab</h1>
+			<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+				<h1 className="text-2xl">Home Lab</h1>
+        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
 			</Pod>
-			<Pod classExtra="col-span-5 row-span-4">
-				<h1>Senior Project</h1>
+<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+				<h1 className="text-2xl">Senior Project</h1>
+        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
 			</Pod>
-			<Pod classExtra="col-span-5 row-span-4">
-				<h1>Dead Internet Theory</h1>
+<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+				<h1 className="text-2xl">Portfolio Site</h1>
+        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
 			</Pod>
-			<Pod classExtra="col-span-5 row-span-4">
-				<h1>Portfolio Site</h1>
+<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+				<h1 className="text-2xl">Dead Internet Theory</h1>
+        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
 			</Pod>
-			<Pod classExtra="col-span-10 row-span-2">
-				<h1>Past Projects</h1>
+			<Pod classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-10 row-span-2">
+				<h1 className="text-2xl">Past Projects</h1>
+        <h1 className="text-2xl"><Icons.ArrowRightIcon /></h1>
 			</Pod>
 		</div>
 	);
