@@ -355,7 +355,7 @@ function SkillsPlaza() {
 				</div>
 			</Pod>
 			<Pod classExtra="col-span-3 row-span-7">
-				<h1 className="text-lg">Coding Languages</h1>
+				<h1 className="text-xl">Languages</h1>
 				<hr className="my-4" />
 				<div className="grid grid-cols-2 gap-10 ml-1">
 					<Icons.PythonIcon />
@@ -368,12 +368,12 @@ function SkillsPlaza() {
 					<Icons.JavaIcon />
 				</div>
 			</Pod>
-			<Pod classExtra="col-span-10 row-span-3">
-				<h1 className="text-xl">Languages</h1>
-				<hr className="my-4" />
-				<div className="flex flex-row">
+      <Pod classExtra="p-2 pl-4 col-span-10 row-span-1">
+      <h1 className="text-lg">Certifications: <span className="text-zinc-400 italic text-base">AWS Developer Associate, Microsoft Azure Fundamentals</span>
+      </h1>
+      </Pod>
+			<Pod classExtra="p-1 col-span-10 row-span-2">
 					<LanguageTimeline />
-				</div>
 			</Pod>
 		</div>
 	);
@@ -381,7 +381,7 @@ function SkillsPlaza() {
 
 const LanguageTimeline = () => {
 	return (
-		<div className="flex flex-col mt-4 items-center font-sans w-full">
+		<div className="flex flex-col mt-6 mx-auto items-center font-sans w-11/12">
 			<div className="relative w-full flex items-center">
 				<div className="absolute top-6 w-full h-0.5 bg-zinc-600"></div>
 
