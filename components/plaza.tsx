@@ -387,7 +387,7 @@ function SkillsPlaza() {
 					<Icons.JavaIcon />
 				</div>
 			</Pod>
-			<Pod classExtra="p-2 pl-4 col-span-10 row-span-1">
+			<Pod classExtra="!p-2 !pl-4 col-span-10 row-span-1">
 				<h1 className="text-lg">
 					Certifications:{" "}
 					<span className="text-zinc-400 italic text-base">
@@ -395,7 +395,7 @@ function SkillsPlaza() {
 					</span>
 				</h1>
 			</Pod>
-			<Pod classExtra="p-1 col-span-10 row-span-2">
+			<Pod classExtra="!p-1 col-span-10 row-span-2">
 				<LanguageTimeline />
 			</Pod>
 		</div>
