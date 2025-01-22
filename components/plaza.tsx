@@ -56,7 +56,7 @@ function HomePlaza() {
 					<hr className="my-2" />
 					<a
 						href="https://blog.alexwarda.com"
-            target="_blank"
+						target="_blank"
 						className="flex flex-row hover:underline text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
@@ -66,7 +66,7 @@ function HomePlaza() {
 					</a>
 					<a
 						href="https://photos.alexwarda.com"
-            target="_blank"
+						target="_blank"
 						className="hover:underline flex flex-row text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
@@ -76,7 +76,7 @@ function HomePlaza() {
 					</a>
 					<a
 						href="https://dash.local.alexwarda.com"
-            target="_blank"
+						target="_blank"
 						className="hover:underline flex flex-row text-lg  text-zinc-400 my-2"
 					>
 						<span className="mr-2">
@@ -223,31 +223,50 @@ function EduPlaza() {
 function ProjectPlaza() {
 	return (
 		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
-			<Pod onClick={() => window.open("https://github.com/alexsio03/HomeLab")} classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+			<Pod
+				onClick={() => window.open("https://github.com/alexsio03/HomeLab")}
+				classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4"
+			>
 				<h1 className="text-2xl">Home Lab</h1>
 				<h1 className="text-2xl">
 					<Icons.ArrowRightIcon />
 				</h1>
 			</Pod>
-			<Pod onClick={() => window.open("https://github.com/alexsio03/senior-project")} classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+			<Pod
+				onClick={() =>
+					window.open("https://github.com/alexsio03/senior-project")
+				}
+				classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4"
+			>
 				<h1 className="text-2xl">Senior Project</h1>
 				<h1 className="text-2xl">
 					<Icons.ArrowRightIcon />
 				</h1>
 			</Pod>
-			<Pod onClick={() => window.open("https://github.com/alexsio03/portfolio")} classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+			<Pod
+				onClick={() => window.open("https://github.com/alexsio03/portfolio")}
+				classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4"
+			>
 				<h1 className="text-2xl">Portfolio Site</h1>
 				<h1 className="text-2xl">
 					<Icons.ArrowRightIcon />
 				</h1>
 			</Pod>
-			<Pod onClick={() => window.open("https://github.com/alexsio03/CommentBot")} classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4">
+			<Pod
+				onClick={() => window.open("https://github.com/alexsio03/CommentBot")}
+				classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-5 row-span-4"
+			>
 				<h1 className="text-2xl">Dead Internet Theory</h1>
 				<h1 className="text-2xl">
 					<Icons.ArrowRightIcon />
 				</h1>
 			</Pod>
-			<Pod onClick={() => window.open("https://github.com/alexsio03?tab=repositories")} classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-10 row-span-2">
+			<Pod
+				onClick={() =>
+					window.open("https://github.com/alexsio03?tab=repositories")
+				}
+				classExtra="flex flex-row justify-around items-center hover:cursor-pointer hover:bg-zinc-700 transition-colors duration-300 col-span-10 row-span-2"
+			>
 				<h1 className="text-2xl">Past Projects</h1>
 				<h1 className="text-2xl">
 					<Icons.ArrowRightIcon />
@@ -368,12 +387,16 @@ function SkillsPlaza() {
 					<Icons.JavaIcon />
 				</div>
 			</Pod>
-      <Pod classExtra="p-2 pl-4 col-span-10 row-span-1">
-      <h1 className="text-lg">Certifications: <span className="text-zinc-400 italic text-base">AWS Developer Associate, Microsoft Azure Fundamentals</span>
-      </h1>
-      </Pod>
+			<Pod classExtra="p-2 pl-4 col-span-10 row-span-1">
+				<h1 className="text-lg">
+					Certifications:{" "}
+					<span className="text-zinc-400 italic text-base">
+						AWS Developer Associate, Microsoft Azure Fundamentals
+					</span>
+				</h1>
+			</Pod>
 			<Pod classExtra="p-1 col-span-10 row-span-2">
-					<LanguageTimeline />
+				<LanguageTimeline />
 			</Pod>
 		</div>
 	);
