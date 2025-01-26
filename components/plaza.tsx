@@ -368,12 +368,11 @@ function SkillsPlaza() {
 					<Icons.JavaIcon />
 				</div>
 			</Pod>
-			<Pod classExtra="col-span-10 row-span-3">
-				<h1 className="text-xl">Languages</h1>
-				<hr className="my-4" />
-				<div className="flex flex-row">
+      <Pod classExtra="p-2 pl-4 col-span-10 row-span-1">
+        <h1 className="text-xl">Certifications: <span className="text-zinc-400 italic text-base">AWS Developer Associate, Microsoft Azure Fundamentals</span></h1>
+      </Pod>
+			<Pod classExtra="p-1 col-span-10 row-span-2">
 					<LanguageTimeline />
-				</div>
 			</Pod>
 		</div>
 	);
@@ -381,7 +380,7 @@ function SkillsPlaza() {
 
 const LanguageTimeline = () => {
 	return (
-		<div className="flex flex-col mt-4 items-center font-sans w-full">
+		<div className="flex flex-col mt-4 items-center font-sans w-11/12 mx-auto">
 			<div className="relative w-full flex items-center">
 				<div className="absolute top-6 w-full h-0.5 bg-zinc-600"></div>
 
@@ -393,11 +392,11 @@ const LanguageTimeline = () => {
 					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
 					<span className="relative -top-4 text-sm text-gray-100">Polish</span>
 				</div>
-				<div className="relative flex flex-col ml-48 items-center">
+				<div className="relative flex flex-col ml-44 items-center">
 					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
 					<span className="relative -top-4 text-sm text-gray-100">German</span>
 				</div>
-				<div className="relative flex flex-col ml-36 items-center">
+				<div className="relative flex flex-col ml-16 items-center">
 					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
 					<span className="relative -top-4 text-sm text-gray-100">Spanish</span>
 				</div>
