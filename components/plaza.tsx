@@ -387,15 +387,15 @@ function SkillsPlaza() {
 					<Icons.JavaIcon />
 				</div>
 			</Pod>
-			<Pod classExtra="p-2 pl-4 col-span-10 row-span-1">
-				<h1 className="text-xl">
+			<Pod classExtra="!p-2 !pl-4 col-span-10 row-span-1">
+				<h1 className="text-lg">
 					Certifications:{" "}
 					<span className="text-zinc-400 italic text-base">
 						AWS Developer Associate, Microsoft Azure Fundamentals
 					</span>
 				</h1>
 			</Pod>
-			<Pod classExtra="p-1 col-span-10 row-span-2">
+			<Pod classExtra="!p-1 col-span-10 row-span-2">
 				<LanguageTimeline />
 			</Pod>
 		</div>
@@ -404,7 +404,7 @@ function SkillsPlaza() {
 
 const LanguageTimeline = () => {
 	return (
-		<div className="flex flex-col mt-4 items-center font-sans w-11/12 mx-auto">
+		<div className="flex flex-col mt-6 mx-auto items-center font-sans w-11/12">
 			<div className="relative w-full flex items-center">
 				<div className="absolute top-6 w-full h-0.5 bg-zinc-600"></div>
 
