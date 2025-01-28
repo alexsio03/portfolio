@@ -15,7 +15,7 @@ const Home = () => {
 
 	useEffect(() => {
 		const checkMobile = () => {
-			setIsMobile(false);//window.innerWidth < 768);
+			setIsMobile(window.innerWidth < 768);
 		};
 		checkMobile();
 		window.addEventListener("resize", checkMobile);
@@ -45,12 +45,29 @@ const Home = () => {
 		<div className={isDark ? "dark" : ""}>
 			<div className="flex items-center justify-center relative min-h-screen bg-white text-gray-800 dark:bg-[#18181b] dark:text-gray-200 transition-colors">
 				{isMobile ? (
-					<div className="p-8 text-center">
-						<h2 className="text-2xl font-bold mb-4">
-							Mobile View Not Available
-						</h2>
-						<p className="text-lg">The site is not optimized for mobile viewing yet. Please visit on desktop and check back soon.</p>
-					</div>
+					<>
+						<Dots />
+						<main
+							id="main"
+							className="z-10 w-full h-screen flex justify-center"
+						>
+							<div className="w-[28rem] h-[40rem] p-8 text-center">
+								<Navbar
+									setActivePlaza={handlePlazaChange}
+									mobile={isMobile}
+									isDark={isDark}
+									setIsDark={setIsDark}
+								/>
+								<div
+									className={`pb-8 flex-1 transition-opacity duration-500 ${
+										isTransitioning ? "opacity-0" : "opacity-100"
+									}`}
+								>
+									<Plaza activePlaza={activePlaza} />
+								</div>
+							</div>
+						</main>
+					</>
 				) : (
 					<>
 						<Dots />
@@ -67,6 +84,7 @@ const Home = () => {
 									<Plaza activePlaza={activePlaza} />
 								</div>
 								<Navbar
+									mobile={isMobile}
 									setActivePlaza={handlePlazaChange}
 									isDark={isDark}
 									setIsDark={setIsDark}

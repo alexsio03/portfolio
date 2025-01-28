@@ -5,10 +5,12 @@ export default function Navbar({
 	setActivePlaza,
 	isDark,
 	setIsDark,
+	mobile,
 }: {
 	setActivePlaza: (label: string) => void;
 	isDark: boolean;
 	setIsDark: (value: boolean) => void;
+	mobile: boolean;
 }) {
 	const [activeIndex, setActiveIndex] = useState(0);
 
@@ -20,11 +22,29 @@ export default function Navbar({
 		{ icon: <Icons.SkillsIcon />, label: "Skills" },
 		{ icon: <Icons.ResumeIcon />, label: "Resume" },
 		/* {
-			icon: isDark ? <Icons.MoonIcon /> : <Icons.SunIcon />,
-			label: isDark ? "Dark Mode" : "Light Mode",
-		}, */
+      icon: isDark ? <Icons.MoonIcon /> : <Icons.SunIcon />,
+      label: isDark ? "Dark Mode" : "Light Mode",
+    }, */
 	];
 
+  if (mobile) {
+    return (
+      <div className="flex flex-row mb-4 justify-around bg-zinc-800 p-4 rounded-lg border border-zinc-700">
+        {navItems.map((item, index) => (
+          <NavPill
+            key={item.label}
+            icon={item.icon}
+            isIconLeft={index % 2 === 0}
+            isActive={index === activeIndex}
+            onClick={() => {
+              setActiveIndex(index);
+              setActivePlaza(item.label);
+            }}
+          />
+        ))}
+      </div>
+    );
+  }
 	return (
 		<div className="flex flex-col mx-auto justify-around bg-zinc-800 p-4 rounded-lg border border-zinc-700">
 			{navItems.map((item, index) => (
@@ -55,7 +75,7 @@ function NavPill({
 	isActive,
 	onClick,
 }: {
-	label: string;
+	label?: string;
 	icon?: React.ReactNode;
 	isIconLeft: boolean;
 	isActive: boolean;
@@ -64,7 +84,7 @@ function NavPill({
 	return (
 		<div
 			onClick={onClick}
-			className={`py-2 px-8 flex flex-row justify-between items-center rounded-full cursor-pointer transition-colors duration-300 ${
+			className={`py-2 px-2 md:px-8 flex flex-row justify-between items-center rounded-full cursor-pointer transition-colors duration-300 ${
 				isActive
 					? "bg-zinc-300 text-zinc-800"
 					: "hover:bg-zinc-300 hover:text-zinc-800 text-white"
@@ -72,17 +92,15 @@ function NavPill({
 		>
 			{isIconLeft ? (
 				<>
-					<div className="mr-4">{icon}</div>
+					<div className="md:mr-4">{icon}</div>
 					<h1 className="font-bold tracking-wide">{label}</h1>
 				</>
 			) : (
 				<>
 					<h1 className="font-bold tracking-wide">{label}</h1>
-					<div className="ml-4">{icon}</div>
+					<div className="md:ml-4">{icon}</div>
 				</>
 			)}
 		</div>
 	);
 }
-
-

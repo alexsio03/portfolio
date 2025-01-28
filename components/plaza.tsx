@@ -18,7 +18,7 @@ export default function Plaza({ activePlaza }: { activePlaza: string }) {
 		plazas[activePlaza] || (() => <div>Plaza not found</div>);
 
 	return (
-		<div className="basis-3/4 h-full rounded-2xl mr-4">
+		<div className="basis-3/4 h-full rounded-2xl md:mr-4">
 			<ActivePlazaComponent />
 		</div>
 	);
@@ -36,21 +36,21 @@ function HomePlaza() {
 	};
 
 	return (
-		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
-			<Pod classExtra="col-span-4 row-span-8 flex !p-0 bg-zinc-900 ">
+		<div className="grid h-1/2 md:grid-cols-10 md:grid-rows-10 gap-4 md:h-full">
+			<Pod classExtra="md:col-span-4 md:row-span-8 flex !p-0 bg-zinc-900 ">
 				<Image className="rounded-lg" src={alexPic} alt="Alex Pic" />
 			</Pod>
 
-			<Pod classExtra="col-span-6 row-span-4 flex justify-center">
+			<Pod classExtra="md:col-span-6 md:row-span-4 flex justify-center">
 				<div className="flex flex-col justify-center">
-					<h1 className="text-4xl  mt-5 leading-tight">Hi, I&apos;m Alex.</h1>
-					<p className="text-4xl  leading-tight text-zinc-400 mb-10">
+					<h1 className="text-2xl md:text-4xl md:mt-5 leading-tight">Hi, I&apos;m Alex.</h1>
+					<p className="text-2xl md:text-4xl  leading-tight text-zinc-400 md:mb-10">
 						I&apos;m a Full-Stack Software Engineer.
 					</p>
 				</div>
 			</Pod>
 
-			<Pod classExtra="col-span-3 row-span-4">
+			<Pod classExtra="md:col-span-3 md:row-span-4">
 				<div className="flex flex-col my-2">
 					<h1 className="text-xl  mb-2">Links</h1>
 					<hr className="my-2" />
@@ -87,7 +87,7 @@ function HomePlaza() {
 				</div>
 			</Pod>
 
-			<Pod classExtra="col-span-3 row-span-4 ">
+			<Pod classExtra="md:col-span-3 md:row-span-4 ">
 				<div className="flex flex-col my-2 h-full">
 					<h1 className="text-xl  mb-2">Hobbies</h1>
 					<hr className="my-2" />
@@ -104,12 +104,12 @@ function HomePlaza() {
 				</div>
 			</Pod>
 
-			<Pod classExtra="col-span-4 row-span-1 flex justify-around items-center">
+			<Pod classExtra="md:col-span-4 md:row-span-1 flex justify-around items-center">
 				<Icons.LocationIcon />
 				<h2 className="text-lg ">San Francisco, CA</h2>
 			</Pod>
 
-			<Pod classExtra="col-span-6 row-span-2 flex ">
+			<Pod classExtra="md:col-span-6 md:row-span-2 flex ">
 				<div className="flex flex-col">
 					<h1 className="text-xl  mb-2">Why Me?</h1>
 					<hr className="mb-2" />
@@ -118,7 +118,7 @@ function HomePlaza() {
 					</h1>
 				</div>
 			</Pod>
-			<Pod classExtra="col-span-4 row-span-1 flex justify-around items-center">
+			<Pod classExtra="md:col-span-4 md:row-span-1 flex justify-around items-center">
 				{copyMessage ? (
 					<p>{copyMessage}</p>
 				) : (
@@ -150,8 +150,9 @@ function HomePlaza() {
 
 function ResumePlaza() {
 	return (
-		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
-			<Pod classExtra="col-span-10 row-span-10">
+		<div className="md:grid md:grid-cols-10 md:grid-rows-10 gap-4 h-full">
+			<Pod classExtra="md:col-span-10 md:row-span-10">
+        {window.innerWidth < 768 && <h1 className="text-xl pt-16">Resume view not available on mobile browsers.</h1>}
 				<embed
 					className="w-full h-full"
 					src="/resume.pdf"
@@ -191,7 +192,7 @@ function EduPlaza() {
 					</div>
 					<div>
 						<h1 className="mb-2 text-lg">Extracurriculars</h1>
-						<ul className="list-disc ml-4 flex text-sm italic flex-col gap-1 text-zinc-400">
+						<ul className="list-disc ml-10 md:ml-4 flex text-sm italic flex-col gap-1 text-zinc-400">
 							<li>SLO Hackathon</li>
 							<li>Cal Poly Surfrider Foundation</li>
 							<li>CP Ski Club</li>
@@ -354,11 +355,11 @@ function ExperiencePlaza() {
 
 function SkillsPlaza() {
 	return (
-		<div className="grid grid-cols-10 grid-rows-10 gap-4 h-full">
-			<Pod classExtra="col-span-7 row-span-7">
+		<div className="space-y-4 md:space-y-0 md:grid md:grid-cols-10 md:grid-rows-10 gap-4 h-full">
+			<Pod classExtra="md:col-span-7 md:row-span-7">
 				<h1 className="text-xl">Tech Stack</h1>
 				<hr className="my-4" />
-				<div className="grid grid-cols-3 gap-4 ml-12">
+				<div className="grid grid-cols-3 gap-4 ml-8 md:ml-12">
 					<Icons.NextJSIcon />
 					<Icons.ReactIcon />
 					<Icons.SvelteIcon />
@@ -373,10 +374,10 @@ function SkillsPlaza() {
 					<Icons.GCPIcon />
 				</div>
 			</Pod>
-			<Pod classExtra="col-span-3 row-span-7">
+			<Pod classExtra="md:col-span-3 md:row-span-7">
 				<h1 className="text-xl">Languages</h1>
 				<hr className="my-4" />
-				<div className="grid grid-cols-2 gap-10 ml-1">
+				<div className="grid grid-cols-4 md:grid-cols-2 gap-10 ml-1">
 					<Icons.PythonIcon />
 					<Icons.GoIcon />
 					<Icons.TSIcon />
@@ -412,15 +413,15 @@ const LanguageTimeline = () => {
 					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
 					<span className="relative -top-4 text-sm text-gray-100">English</span>
 				</div>
-				<div className="relative flex flex-col ml-12 items-center">
+				<div className="relative flex flex-col ml-6 md:ml-12 items-center">
 					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
 					<span className="relative -top-4 text-sm text-gray-100">Polish</span>
 				</div>
-				<div className="relative flex flex-col ml-44 items-center">
+				<div className="relative flex flex-col ml-14 md:ml-44 items-center">
 					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
 					<span className="relative -top-4 text-sm text-gray-100">German</span>
 				</div>
-				<div className="relative flex flex-col ml-16 items-center">
+				<div className="relative flex flex-col ml-4 md:ml-16 items-center">
 					<div className="absolute w-4 h-4 bg-zinc-600 top-4 rounded-full"></div>
 					<span className="relative -top-4 text-sm text-gray-100">Spanish</span>
 				</div>
