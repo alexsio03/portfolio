@@ -29,4 +29,3 @@ Welcome to the repository for my personal portfolio website! This project is des
   - **Cloudflare Services**:
     - DNS for managing the domain.
     - Tunnel for secure, public access to the website.
->>>>>>> 70b9ff5bb1119064121f859f132629cc5019683b
